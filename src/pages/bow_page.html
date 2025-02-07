@@ -10,27 +10,39 @@
 
 <body>
     <div class="bg-purple-50 ">
-        <nav class="bg-pink-300 flex justify-between h-[50px] items-center p-[10px]">
-            <button><img src="../assets/home.png" alt="home_icon" class="h-[30px] w-[30px] cursor-pointer"></button>
-            <div>vanichaya</div>
-            <div>dwadwa</div>
-            <button class="bg-cyan-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-2xl cursor-pointer">
-                Button
-            </button>
-        </nav>
-        <div class="flex-col flex lg:flex-row  mt-10  h-150 items-center gap-4  text-center  md:text-left p-4 ">
+        <nav class="bg-yellow-400 flex justify-between h-[50px] items-center p-[10px] sticky">
+            <div class="flex">
+              <a
+                href="http://127.0.0.1:5500/RushPro/src/pages/Home.html" class="px-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[0px] hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]"
+                onmouseover="showHome()"><img src="../assets/home.png" alt="home_icon" class="h-[20px] w-[20px] ">
+                <div class="ml-[5px]">Home</div>
+              </a>
+              <div
+                class="px-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[0px] hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]"
+                onmouseover="showHome()"><img src="../assets/user.png" alt="home_icon" class="h-[20px] w-[20px] ">
+                <div class="ml-[5px]">User</div>
+              </div>
+              <div
+                class="px-[10px] cursor-pointer flex items-center text-[0px] hover:transition-all duration-350 hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]"
+                onmouseover="showHome()"><img src="../assets/telephone.png" alt="home_icon" class="h-[20px] w-[20px] ">
+                <div class="ml-[5px]">Contrat</div>
+              </div>
+            </div>
+            <div class="font-semibold">Welcome</div>
+          </nav>
+        <div class="flex-col flex lg:flex-row  mt-10  h-150 items-center gap-4  text-center  md:text-left p-4 justify-between mx-[10px]">
             <!-- ข้อความ -->
-            <div class=" lg:w-150 w-120 lg:ml-20 font-bold  p-2 ">
+            <div class=" lg:w-150 w-120  font-bold  p-2 ">
                 <div class="flex md:flex-col flex-row items-center md:items-start gap-2 whitespace-nowrap ml-3 lg:ml-0">
-                    <h1 class="lg:text-[90px] text-[30px] text-cyan-600 lg:ml-8">Hi I'm Bow</h1>
+                    <h1 class="lg:text-[90px] text-[30px] text-cyan-600 ">Hi I'm Bow</h1>
                 
-                    <p class="lg:text-[70px] text-[30px] text-pink-500 lg:ml-8">i'm a student KMITL</p>
+                    <p class="lg:text-[70px] text-[30px] text-pink-500 ">i'm a student KMITL</p>
                 </div>
             </div>
 
             <!-- รูปภาพ -->
 
-            <div class="bg-blue-200 rounded-lg  lg:w-120 flex  flex-col items-center p-4  justify-center lg:ml-[20vh]">
+            <div class="bg-blue-200 rounded-lg  lg:w-120 flex  flex-col items-center p-4  justify-center">
 
                 <div class="p-4 rounded-md flex justify-center lg:w-120 lg:h-120 w-100 h-100">
                     <img class="w-full h-full "
