@@ -10,26 +10,58 @@
 
 <body>
     <div class="bg-purple-50 ">
-        <nav class="bg-pink-300 flex justify-between h-[50px] items-center p-[10px] sticky">
-            <div class="flex">
-                <a href="http://127.0.0.1:5500/RushPro/src/pages/Home.html"
-                    class="px-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[0px] hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]"
-                    onmouseover="showHome()"><img src="../assets/home.png" alt="home_icon" class="h-[20px] w-[20px] ">
-                    <div class="ml-[5px]">Home</div>
-                </a>
-                <div class="px-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[0px] hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]"
-                    onmouseover="showHome()"><img src="../assets/user.png" alt="home_icon" class="h-[20px] w-[20px] ">
-                    <div class="ml-[5px]">User</div>
-                </div>
-                <div class="px-[10px] cursor-pointer flex items-center text-[0px] hover:transition-all duration-350 hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]"
-                    onmouseover="showHome()"><img src="../assets/telephone.png" alt="home_icon"
-                        class="h-[20px] w-[20px] ">
-                    <div class="ml-[5px]">Contrat</div>
-                </div>
+        <nav class="bg-pink-600 flex justify-between h-[50px] items-center p-[10px]">
+            <a href="/src/pages/Home.html"
+              class="px-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[0px] hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]">
+              <img src="../assets/home.png" alt="home_icon" class="h-[20px] w-[20px] ">
+              <div class="ml-[5px]">Home</div>
+            </a>
+    
+            <div class="sm:flex hidden">
+              <div id="Touser"
+                class="px-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[0px] hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]">
+                <img src="../assets/user.png" alt="home_icon" class="h-[20px] w-[20px] ">
+                <div class="ml-[5px]">User</div>
+              </div>
+              <div id="Toex"
+                class="px-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[0px] hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]">
+                <img src="../assets/agenda.png" alt="home_icon" class="h-[20px] w-[20px] ">
+                <div class="ml-[5px]">experience</div>
+              </div>
+              <div id="Tocon"
+                class="px-[10px] cursor-pointer flex items-center text-[0px] hover:transition-all duration-350 hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]">
+                <img src="../assets/telephone.png" alt="home_icon" class="h-[20px] w-[20px] ">
+                <div class="ml-[5px]">Contrat</div>
+              </div>
             </div>
-            <div class="font-semibold">Welcome</div>
-        </nav>
-        <div class="flex-col flex lg:flex-row  mt-10  h-150 items-center gap-4  text-center  md:text-left lg:p-15 p-4 justify-between mx-[30px]">
+            <div id="btndrop"
+                class="px-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[0px] hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px] sm:hidden">
+                <img src="../assets/align-justify.svg" alt="home_icon" class="h-[20px] w-[20px] ">
+                <div class="ml-[5px]">Menu</div>
+              </div>
+              
+              <div class='hidden bg-gray-300 w-[150px] h-[190px] border-black border-[2px] absolute right-0 mt-[240px]'id = "dropcon">
+                <div class="flex flex-col justify-between h-[190px] w-[150px]">
+                  <div><img src="../assets/x.svg" alt="X" id="X" class="cursor-pointer"></div>
+                  <div id="Touser1"
+                    class="m-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[14px] hover:bg-white  rounded-[12px]">
+                    <img src="../assets/user.png" alt="home_icon" class="h-[20px] w-[20px] ">
+                    <div class="ml-[5px]">User</div>
+                  </div>
+                  <div id="Toex1"
+                    class="m-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[14px] hover:bg-white  rounded-[12px]">
+                    <img src="../assets/agenda.png" alt="home_icon" class="h-[20px] w-[20px] ">
+                    <div class="ml-[5px]">experience</div>
+                  </div>
+                  <div id="Tocon1"
+                    class="m-[10px] cursor-pointer flex items-center  hover:transition-all duration-350 text-[14px] hover:bg-white rounded-[12px]">
+                    <img src="../assets/telephone.png" alt="home_icon" class="h-[20px] w-[20px] ">
+                    <div class="ml-[5px]">Contrat</div>
+                  </div>
+                </div>
+              </div>
+          </nav>
+        <div class="flex-col flex lg:flex-row  mt-10  h-150 items-center gap-4  text-center  md:text-left lg:p-15 p-4 justify-between mx-[30px]"id="user">
             <!-- ข้อความ -->
             <div class=" lg:w-[120vh] w-120  font-bold ">
                 <div class="flex  sm:flex-col flex-row  xl:ml-20 sm:item-start gap-2 whitespace-nowrap px-6 lg:px-0 md:text-center lg:text-left">
@@ -51,7 +83,7 @@
                         alt="profile-picture" />
                 </div>
                 <div>
-                    <a href="https://www.instagram.com/vanit.rx/"target="_blank">
+                    <a href="https://www.instagram.com/vanit.rx/"target="_blank"id='con'>
                         <button type="button" data-twe-ripple-init data-twe-ripple-color="light"
                             class="mb-2 inline-block rounded-full bg-[#c13584] p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg cursor-pointer">
                             <span class="[&>svg]:h-4 [&>svg]:w-4">
@@ -148,7 +180,7 @@
 
 
         
-        <div class="lg:mx-48 p-4 lg:p-0 lg:mt-10 mt-[5vh]  rounded-2xl flex flex-col ">
+        <div class="lg:mx-48 p-4 lg:p-0 lg:mt-10 mt-[5vh]  rounded-2xl flex flex-col "id='ex'>
             <div class="flex justify-center">
                 <button id="dropdownButton"
                     class="w-60 h-15 bg-orange-300 text-black text-2xl font-bold py-2 px-4 rounded-2xl border-2 cursor-pointer">
@@ -180,3 +212,53 @@
 </body>
 
 </html>
+
+
+<script>
+    document.getElementById("btndrop").addEventListener("click", function () {
+        const dropdown = document.getElementById("dropcon");
+        dropdown.classList.toggle("hidden");
+    });
+    document.getElementById("X").addEventListener("click", function () {
+        const dropdown = document.getElementById("dropcon");
+        dropdown.classList.toggle("hidden");
+    });
+    const Touser = document.getElementById('Touser');
+    const user = document.getElementById('user');
+    const Toex = document.getElementById('Toex');
+    const ex = document.getElementById('ex');
+    const Tocon = document.getElementById('Tocon');
+    const con = document.getElementById('con');
+    const Touser1 = document.getElementById('Touser1');
+    const Toex1 = document.getElementById('Toex1');
+    const Tocon1 = document.getElementById('Tocon1');
+    
+  
+    Touser.addEventListener('click', () => {
+      user.scrollIntoView({ behavior: 'smooth' });
+      
+    });
+    Toex.addEventListener('click', () => {
+      ex.scrollIntoView({ behavior: 'smooth' });
+      
+    });
+    Tocon.addEventListener('click', () => {
+      con.scrollIntoView({ behavior: 'smooth' });
+      
+    });
+    Touser1.addEventListener('click', () => {
+      user.scrollIntoView({ behavior: 'smooth' });
+      const dropdown = document.getElementById("dropcon");
+      dropdown.classList.toggle("hidden");
+    });
+    Toex1.addEventListener('click', () => {
+      ex.scrollIntoView({ behavior: 'smooth' });
+      const dropdown = document.getElementById("dropcon");
+      dropdown.classList.toggle("hidden");
+    });
+    Tocon1.addEventListener('click', () => {
+      con.scrollIntoView({ behavior: 'smooth' });
+      const dropdown = document.getElementById("dropcon");
+      dropdown.classList.toggle("hidden");
+    });
+  </script>
