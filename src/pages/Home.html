@@ -1,17 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="../output.css" rel="stylesheet">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-  <nav class="bg-pink-200 flex justify-between h-[50px] items-center p-[10px]">
-    <div><img src="../assets/home.png" alt="home_icon"class="h-[30px] w-[30px]"></div>
-    <div>dwadwa</div>
-    <div>dwadwa</div>
-  </nav>
   
+  <nav class="bg-yellow-400 flex justify-between h-[50px] items-center p-[10px] sticky">
+    <div class="flex">
+      <div
+        class="px-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[0px] hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]"
+        onmouseover="showHome()"><img src="../assets/home.png" alt="home_icon" class="h-[20px] w-[20px] ">
+        <div class="ml-[5px]">Home</div>
+      </div>
+      <div
+        class="px-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[0px] hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]"
+        onmouseover="showHome()"><img src="../assets/user.png" alt="home_icon" class="h-[20px] w-[20px] ">
+        <div class="ml-[5px]">User</div>
+      </div>
+      <div
+        class="px-[10px] cursor-pointer flex items-center text-[0px] hover:transition-all duration-350 hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]"
+        onmouseover="showHome()"><img src="../assets/telephone.png" alt="home_icon" class="h-[20px] w-[20px] ">
+        <div class="ml-[5px]">Contrat</div>
+      </div>
+    </div>
+    <div class="font-semibold">Welcome</div>
+  </nav>
+
+
+  <div class="parallax1 flex items-center ">
+    <div class="ml-[20px]">
+      <div class="text-white text-[46px] font-semibold">Welcome to own Portfolio</div>
+      <div class="flex m-[10px]"><img src="../assets/check.svg" alt="checked"><div class="text-white text-[20px] mt-[-5px] ml-[5px]">Contrak</div></div>
+      <div class="flex m-[10px]"><img src="../assets/check.svg" alt="checked"><div class="text-white text-[20px] mt-[-5px] ml-[5px]">Cetificate</div></div>
+      <div class="flex m-[10px]"><img src="../assets/check.svg" alt="checked"><div class="text-white text-[20px] mt-[-5px] ml-[5px]">aboute us</div></div>
+      
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <div class="border-[2px] rounded-[20px] h-[400px] w-[250px] m-[20px] flex flex-col items-center">
+      <div class="h-[246px] w-[246px] bg-yellow-400 rounded-t-[19px]"></div>
+      <div class="text-[30px] font-semibold">pechongr</div>
+      <div>20 year old</div>
+      <div class="flex">
+        <div><img src="https://cdn-icons-png.freepik.com/256/15707/15707869.png?semt=ais_hybrid" alt="" class="h-[40px] w-[40px] rounded-[10px] m-[10px]"></div>
+        <div><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png" alt="" class="h-[40px] w-[40px] rounded-[10px] m-[10px]"></div>
+      </div>
+    </div>
+
+    <div class="border-[2px] rounded-[20px] h-[400px] w-[250px] m-[20px] flex flex-col items-center">
+      <div class="h-[246px] w-[246px] bg-yellow-400 rounded-t-[19px]"></div>
+      <div class="text-[30px] font-semibold">pechongr</div>
+      <div>20 year old</div>
+      <div class="flex">
+        <div><img src="https://cdn-icons-png.freepik.com/256/15707/15707869.png?semt=ais_hybrid" alt="" class="h-[40px] w-[40px] rounded-[10px] m-[10px]"></div>
+        <div><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png" alt="" class="h-[40px] w-[40px] rounded-[10px] m-[10px]"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class=" h-[200px] bg-black">
+    <div class="text-white">thank for visite</div>
+  </div>
+
 </body>
+
 </html>
